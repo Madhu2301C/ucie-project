@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Code your testbench here
 // or browse Examples
 module tb_ucie68b_header_encoder;
@@ -34,23 +35,10 @@ module tb_ucie68b_header_encoder;
             if ((header_byte0 !== expected_byte0) ||
                 (header_byte1 !== expected_byte1)) begin
 
-                $error(
-                    "FAIL: stack=%0b type=%b seq=%h "
-                    //"Expected=%h %h, Actual=%h %h",
-                    , test_stack_id, test_type, test_seq
-                );
-
-                $display(
-                    "Expected: Byte0=%02h Byte1=%02h",
-                    expected_byte0, expected_byte1
-                );
-
-                $display(
-                    "Actual:   Byte0=%02h Byte1=%02h",
-                    header_byte0, header_byte1
-                );
-
-                $fatal(1, "Header test failed");
+                $fatal(1,
+                    "FAIL: header stack=%0b type=%b seq=%h expected=%02h %02h actual=%02h %02h",
+                    test_stack_id, test_type, test_seq,
+                    expected_byte0, expected_byte1, header_byte0, header_byte1);
             end
             else begin
                 $display("PASS: stack=%0b type=%b seq=%02h header=%02h %02h",
@@ -73,7 +61,9 @@ module tb_ucie68b_header_encoder;
         check_header(1'b1, 2'b10, 8'h35, 8'h63, 8'h25);
 
         $display("All header encoder tests passed.");
+        $display("REGRESSION_PASS: tb_ucie68b_header_encoder");
         $finish;
     end
 
+    initial begin #10000; $fatal(1, "FAIL: tb_ucie68b_header_encoder watchdog"); end
 endmodule

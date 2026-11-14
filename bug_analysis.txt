@@ -1,0 +1,165 @@
+BUG ANALYSIS - UCIe RTL Design (E:\ucie\RTL)
+
+================================================================================
+1. INCORRECT X/Z DETECTION IN ucie68b_flit_rx.sv (LINES 37-39)
+================================================================================
+
+  Current code:
+    always_comb begin
+        crc_error = (calculated_crc != received_crc);
+        // The CRC recurrence may mask X/Z data; inspect its inputs as well.
+        // synthesis translate_off
+        if ((^crc_message === 1'bx) ||
+            (^received_crc === 1'bx) || (^calculated_crc === 1'bx))
+            crc_error = 1'b1;
+        // synthesis translate_on
+        flit_valid = !crc_error;
+    end
+
+  PROBLEM: The ^ operator is the reduction XOR, which XORs ALL bits together
+  producing a single bit. For a 128-bit vector, ^crc_message gives 1 if an
+  odd number of bits are '1', 0 if even. Comparing this single bit to
+  1'bx only checks if the PARITY RESULT is X, NOT if any individual bit is X/Z.
+
+  INTENDED BEHAVIOR: Detect if ANY bit in the vectors is X or Z, which would
+  make the CRC comparison unreliable.
+
+  FIX REQUIRED: Replace with proper X/Z detection, e.g.:
+    if (|(crc_message === 1'bx) | (crc_message === 1'bz) |
+        |(received_crc === 1'bx) | (received_crc === 1'bz) |
+        |(calculated_crc === 1'bx) | (calculated_crc === 1'bz))
+        crc_error = 1'b1;
+
+  Example fix:
+    always_comb begin
+        crc_error = (calculated_crc != received_crc);
+        if (crc_message === 1'bx || crc_message === 1'bz ||
+            received_crc === 1'bx || received_crc === 1'bz ||
+            calculated_crc === 1'bx || calculated_crc === 1'bz)
+            crc_error = 1'b1;
+        flit_valid = !crc_error;
+    end
+
+================================================================================
+2. INTERNAL SIGNAL ACCESS IN TESTBENCH tb_ucie68b_flit_tx_mapping.sv
+================================================================================
+
+  Current code lines 49, 51:
+    $display("DUT CRC message [15:0] = %04h", dut.crc_message[15:0]);
+    $display("DUT CRC value          = %04h", dut.crc_value);
+
+  PROBLEM: In ucie68b_flit_tx.sv, crc_message (line 12) and crc_value (line 13)
+  are LOCAL WIRES/LOGIC inside the module, NOT output ports. They are not
+  hierarchically accessible from the testbench without modports or explicit
+  signal exports.
+
+  IMPACT: These $display statements may produce X/0/undefined values or cause
+  simulation warnings/errors depending on the Verilog simulator used. The test
+  may pass incorrectly or fail spuriously.
+
+  FIX REQUIRED: Either:
+  a) Expose these signals as module outputs, or
+  b) Remove these debug displays, or
+  c) Use modports to selectively expose internal signals
+
+================================================================================
+3. REDUNDANT/ALWAYS-TRUE CHECK IN tb_ucie68b_flit_rx_mapping.sv
+================================================================================
+
+  Current code lines 29-31:
+    if ({header_byte1,header_byte0} !== message[15:0] ||
+        payload_out !== message[527:16] ||
+        received_crc !== expected_crc ||
+        calculated_crc !== expected_crc ||
+        dut.crc_message !== message)
+        $fatal(1, "FAIL: RX mapping/padding vector %0d", j);
+
+  ANALYSIS: header_byte0 = flit_in[7:0] and header_byte1 = flit_in[15:8] (from
+  ucie68b_flit_rx.sv). The good_flit is constructed as {expected_crc, message[527:0]}.
+
+  Therefore: {header_byte1, header_byte0} = {flit_in[15:8], flit_in[7:0]}
+          = {message[15:8], message[7:0]} = message[15:0]
+
+  THIS CHECK ALWAYS PASSES - it's comparing the extracted headers against the
+  first 16 bits of the message, which by construction always match. This check
+  provides no actual verification and should be replaced with a meaningful
+  comparison, e.g., checking headers against known expected values or against
+  the protocol fields.
+
+================================================================================
+4. CRC MESSAGE PADDING CONSISTENCY
+================================================================================
+
+  Current code in tb_ucie68b_flit_tx_mapping.sv lines 78-83:
+    if (expected_crc_message[1023:528] !== '0)
+        $fatal(1, "FAIL: expected CRC padding is not zero");
+
+    if (dut.crc_message[1023:528] !== '0)
+        $fatal(1, "FAIL: DUT CRC input padding is not zero");
+
+  ANALYSIS: The CRC candidate (ucie_crc16_candidate.sv) processes ALL 1024 bits
+  including bits [1023:528]. If these bits are X or Z, the CRC result may be
+  undefined. The test correctly checks for zero padding, but the CRC candidate
+  should ideally handle X/Z in padding bits gracefully (either by treating them
+  as 0 or by flagging an error).
+
+  VERIFICATION: The CRC reference (ucie_crc16_reference.sv) also processes all
+  1024 bits (128 bytes × 8 bits). Both implementations need to ensure padding
+  bits are consistently 0 before CRC calculation.
+
+================================================================================
+5. HEADER ENCODING CONSISTENCY CHECK
+================================================================================
+
+  Current code in ucie68b_header_encoder.sv:
+    header_byte0[7:6] = 2'b01;       // Protocol Layer flit
+    header_byte0[5]   = stack_id;
+    header_byte0[4]   = 1'b0;        // Regular header
+    header_byte0[3:0] = sequence_num[7:4];
+
+    header_byte1[7:6] = 2'b00;       // Regular header
+    header_byte1[5:4] = ack_nak_type;
+    header_byte1[3:0] = sequence_num[3:0];
+
+  VERIFICATION: The header format seems consistent between the encoder, TX,
+  and RX modules. The protocol fields (protocol type, stack_id, regular header
+  marker, sequence_num) are properly encoded and decoded.
+
+================================================================================
+6. ERROR INJECTION BIT RANGE
+================================================================================
+
+  Current code in ucie_link_top.sv line 67:
+    if (inject_error && !injected_once &&
+        tx_valid && tx_ready)
+        link_flit[100] = ~retry_flit[100];
+
+  VERIFICATION: The flit is 544 bits wide (indices 0 to 543). Bit 100 is
+  within valid range. This error injection flips bit 100 on the first
+  transmission, which should cause a CRC mismatch at the receiver.
+
+  Note: Need to verify that bit 100 is in the intended portion of the flit
+  (header, payload, or CRC area) for the test to be meaningful.
+
+================================================================================
+7. STATE MACHINE DEFAULT HANDLING
+================================================================================
+
+  Current code in ucie_retry_controller.sv lines 63-65:
+    default: begin
+        // IDLE: no transmission
+    end
+
+  ANALYSIS: The default case in the always_comb case statement handles
+  unspecified states by staying in IDLE behavior. This is acceptable but
+  should ideally have an explicit check or reset logic.
+
+================================================================================
+SUMMARY OF RECOMMENDED FIXES
+================================================================================
+
+1. Fix X/Z detection in ucie68b_flit_rx.sv (CRITICAL - affects correctness)
+2. Fix internal signal access in testbench or remove debug displays (HIGH)
+3. Fix redundant header check in tb_ucie68b_flit_rx_mapping.sv (MEDIUM)
+4. Verify CRC padding handling consistency (MEDIUM)
+5. Review error injection impact on CRC validation (LOW)

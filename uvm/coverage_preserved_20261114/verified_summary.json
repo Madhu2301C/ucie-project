@@ -1,0 +1,576 @@
+{
+  "metrics": {
+    "before": {
+      "Stmts": {
+        "active": 99,
+        "hits": 97,
+        "misses": 2,
+        "percent": 97.98
+      },
+      "Branches": {
+        "active": 40,
+        "hits": 37,
+        "misses": 3,
+        "percent": 92.5
+      },
+      "FEC Condition Terms": {
+        "active": 17,
+        "hits": 9,
+        "misses": 8,
+        "percent": 52.941
+      },
+      "FEC Expression Terms": {
+        "active": 2,
+        "hits": 2,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "States": {
+        "active": 4,
+        "hits": 4,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "Transitions": {
+        "active": 8,
+        "hits": 6,
+        "misses": 2,
+        "percent": 75.0
+      },
+      "Toggle Bins": {
+        "active": 24922,
+        "hits": 11377,
+        "misses": 13545,
+        "percent": 45.65
+      },
+      "reported_total": "79.4"
+    },
+    "after": {
+      "Stmts": {
+        "active": 99,
+        "hits": 97,
+        "misses": 2,
+        "percent": 97.98
+      },
+      "Branches": {
+        "active": 40,
+        "hits": 38,
+        "misses": 2,
+        "percent": 95.0
+      },
+      "FEC Condition Terms": {
+        "active": 17,
+        "hits": 15,
+        "misses": 2,
+        "percent": 88.235
+      },
+      "FEC Expression Terms": {
+        "active": 2,
+        "hits": 2,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "States": {
+        "active": 4,
+        "hits": 4,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "Transitions": {
+        "active": 8,
+        "hits": 8,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "Toggle Bins": {
+        "active": 24922,
+        "hits": 21590,
+        "misses": 3332,
+        "percent": 86.63
+      },
+      "reported_total": "94.6"
+    }
+  },
+  "functional": {
+    "before": {
+      "/ucie_pkg/ucie_coverage/retry_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/retry_summary_cg": [
+        {
+          "name": "no_nak",
+          "rhs": "0",
+          "hits": 2
+        },
+        {
+          "name": "nak_seen",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "no_timeout",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "timeout_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_backpressure",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "backpressure_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_simultaneous",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "simultaneous_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 2
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 3
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 1
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 0
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 2
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 2
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_summary_cg": [
+        {
+          "name": "normal_transaction",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "error_injected",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_crc_error",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "crc_error_detected",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "replay_observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "payload_recovered",
+          "rhs": "1",
+          "hits": 2
+        },
+        {
+          "name": "normal_success",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "error_recovery_success",
+          "rhs": "15",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 0
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 0
+        }
+      ],
+      "/ucie_pkg/retry_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 17
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 8
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 2
+        }
+      ]
+    },
+    "after": {
+      "/ucie_pkg/ucie_coverage/retry_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 13
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 18
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 11
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 19
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 35
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/retry_summary_cg": [
+        {
+          "name": "no_nak",
+          "rhs": "0",
+          "hits": 4
+        },
+        {
+          "name": "nak_seen",
+          "rhs": "1",
+          "hits": 7
+        },
+        {
+          "name": "no_timeout",
+          "rhs": "0",
+          "hits": 10
+        },
+        {
+          "name": "timeout_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_backpressure",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "backpressure_seen",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "no_simultaneous",
+          "rhs": "0",
+          "hits": 10
+        },
+        {
+          "name": "simultaneous_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 4
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 1
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 1
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 15
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 15
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_summary_cg": [
+        {
+          "name": "normal_transaction",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "error_injected",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "no_crc_error",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "crc_error_detected",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "replay_observed",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "payload_recovered",
+          "rhs": "1",
+          "hits": 15
+        },
+        {
+          "name": "normal_success",
+          "rhs": "1",
+          "hits": 11
+        },
+        {
+          "name": "error_recovery_success",
+          "rhs": "15",
+          "hits": 4
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 1
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 2
+        }
+      ],
+      "/ucie_pkg/retry_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 17
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 8
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 2
+        }
+      ]
+    }
+  },
+  "baseline_count": 8,
+  "extension_count": 21,
+  "original_source_count": 33,
+  "changed_originals": [],
+  "staged_checkpoint_unchanged": true,
+  "original_backup": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_084231\\backup"
+}

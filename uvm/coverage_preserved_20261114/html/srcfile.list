@@ -1,0 +1,11 @@
+E:/ucie/RTL/UVM/env/ucie_coverage.sv
+E:/ucie/RTL/UVM/interfaces/ucie_link_if.sv
+E:/ucie/RTL/UVM/interfaces/ucie_retry_if.sv
+E:/ucie/RTL/UVM/tb_top.sv
+E:/ucie/RTL/UVM/ucie_pkg.sv
+E:/ucie/RTL/src/ucie68_header_encoder.sv
+E:/ucie/RTL/src/ucie68b_flit_rx.sv
+E:/ucie/RTL/src/ucie68b_flit_tx.sv
+E:/ucie/RTL/src/ucie_crc16_candidate.sv
+E:/ucie/RTL/src/ucie_link_top.sv
+E:/ucie/RTL/src/ucie_retry_controller.sv

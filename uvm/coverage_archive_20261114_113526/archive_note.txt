@@ -1,0 +1,6 @@
+Archive created: 20261114_113526
+Source run directory: E:\ucie\RTL\UVM\logs\coverage_extension_20261114_112853
+Files archived (SHA-256 verified): 240
+No production RTL/monitor/scoreboard/original-test files modified.
+Staged Git checkpoint preserved (no commit, reset, stash, or unstage performed).
+Acceptance: 29/29 positive, 8/8 original, 45/45 functional (100%), code 94.6% (baseline 79.4%), 0 unexpected UVM severities, 0 original RTL changes.

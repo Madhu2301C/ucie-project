@@ -1,0 +1,25 @@
+# Questa/ModelSim generated artifacts
+work/
+uvm/work/
+uvm/uvm_lib/
+src/work/
+modelsim.ini
+uvm/modelsim.ini
+transcript
+uvm/transcript
+*.wlf
+*.ucdb
+*.log
+
+# Regression outputs, snapshots, and local tool libraries
+logs/
+uvm/logs/
+regression_build/
+regression_backups/
+patch_validation_*/
+uvm/uvm-1.2/
+uvm/env/*_original.sv
+
+# Python cache
+__pycache__/
+*.pyc

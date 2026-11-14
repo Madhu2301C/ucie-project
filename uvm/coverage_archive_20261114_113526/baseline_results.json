@@ -1,0 +1,50 @@
+[
+  {
+    "name": "TC01",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\TC01.ucdb"
+  },
+  {
+    "name": "TC02",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\TC02.ucdb"
+  },
+  {
+    "name": "TC03",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\TC03.ucdb"
+  },
+  {
+    "name": "TC04",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\TC04.ucdb"
+  },
+  {
+    "name": "TC05",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\TC05.ucdb"
+  },
+  {
+    "name": "TC06",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\TC06.ucdb"
+  },
+  {
+    "name": "LINK_NORMAL",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\LINK_NORMAL.ucdb"
+  },
+  {
+    "name": "LINK_ERROR",
+    "clean": true,
+    "done": true,
+    "ucdb": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\LINK_ERROR.ucdb"
+  }
+]

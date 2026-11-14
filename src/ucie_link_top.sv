@@ -95,20 +95,34 @@ module ucie_link_top (
             ack_reg <= 1'b0;
             nak_reg <= 1'b0;
 
+            // Start of a new transaction
+            if (send_req && !busy) begin
+                done           <= 1'b0;
+                injected_once  <= 1'b0;
+                crc_error_seen <= 1'b0;
+                received_payload <= '0;
+            end
+
             if (tx_valid && tx_ready) begin
+
+                // Mark error injection as completed
                 if (inject_error && !injected_once)
                     injected_once <= 1'b1;
 
+                // CRC error: send NAK
                 if (rx_crc_error) begin
                     nak_reg        <= 1'b1;
                     crc_error_seen <= 1'b1;
                 end
+
+                // Valid flit: send ACK
                 else if (rx_flit_valid) begin
                     ack_reg          <= 1'b1;
                     done             <= 1'b1;
                     received_payload <= rx_payload;
                 end
 
+                // Count accepted replay transmissions
                 if (retransmit)
                     retransmission_count <=
                         retransmission_count + 1'b1;

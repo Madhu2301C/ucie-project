@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 
 module tb_ucie_crc16_candidate;
 
@@ -17,7 +18,7 @@ module tb_ucie_crc16_candidate;
         .crc(crc)
     );
 
-    // Independent CRC instances for linearity testing
+    // Additional candidate instances for linearity testing; not independent models
     ucie_crc16_candidate dut_a (
         .message(message_a),
         .crc(crc_a)
@@ -60,8 +61,8 @@ module tb_ucie_crc16_candidate;
         message[8] = 1'b1;
         #1;
 
-        if (crc === 16'h0000)
-            $fatal(1, "FAIL: bit-8 input produced zero CRC");
+        if (crc !== 16'h0B00)
+            $fatal(1, "FAIL: bit-8 CRC expected 0B00");
 
         $display("PASS: bit-8 CRC = %04h", crc);
 
@@ -92,8 +93,27 @@ module tb_ucie_crc16_candidate;
 
         $display("PASS: CRC linearity");
 
-        $display("All extended CRC tests passed");
+
+	// Test 6: All 128 bytes set to FF
+	message = {1024{1'b1}};
+	#1;
+if (crc !== 16'h002E)
+    $fatal(1, "FAIL: all-FF CRC expected 002E, got %04h", crc);
+$display("PASS: all-FF CRC = %04h", crc);
+
+// Test 7: Incrementing byte pattern: 00, 01, ... 7F
+message = '0;
+for (integer b = 0; b < 128; b = b + 1)
+    message[b*8 +: 8] = b[7:0];
+#1;
+if (crc !== 16'h249F)
+    $fatal(1, "FAIL: incrementing CRC expected 249F, got %04h", crc);
+$display("PASS: incrementing CRC = %04h", crc);
+
+        $display("All seven extended CRC tests passed");
+        $display("REGRESSION_PASS: tb_ucie_crc16_candidate");
         $finish;
     end
 
+    initial begin #10000; $fatal(1, "FAIL: tb_ucie_crc16_candidate watchdog"); end
 endmodule

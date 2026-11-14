@@ -1,0 +1,117 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: E:/ucie/RTL/UVM/interfaces/ucie_link_if.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                   2148      2098        50      97.6
+
+=================================================================================
+=== File: E:/ucie/RTL/UVM/interfaces/ucie_retry_if.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                   2196      2196         0     100.0
+
+=================================================================================
+=== File: E:/ucie/RTL/src/ucie68_header_encoder.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           10        10         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                     54        32        22      59.2
+
+=================================================================================
+=== File: E:/ucie/RTL/src/ucie68b_flit_rx.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           13        13         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                   4260      3226      1034      75.7
+
+=================================================================================
+=== File: E:/ucie/RTL/src/ucie68b_flit_tx.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           12        12         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                   4246      3200      1046      75.3
+
+=================================================================================
+=== File: E:/ucie/RTL/src/ucie_crc16_candidate.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            8         8         0     100.0
+    Branches                         2         2         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             2         2         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                   2178      1108      1070      50.8
+
+=================================================================================
+=== File: E:/ucie/RTL/src/ucie_link_top.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           24        24         0     100.0
+    Branches                        15        14         1      93.3
+    FEC Condition Terms             10        10         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       0         0         0     100.0
+        Transitions                  0         0         0     100.0
+    Toggle Bins                   6544      6434       110      98.3
+
+=================================================================================
+=== File: E:/ucie/RTL/src/ucie_retry_controller.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           32        30         2      93.7
+    Branches                        23        22         1      95.6
+    FEC Condition Terms              7         5         2      71.4
+    FEC Expression Terms             0         0         0     100.0
+    FSMs                                                       100.0
+        States                       4         4         0     100.0
+        Transitions                  8         8         0     100.0
+    Toggle Bins                   3296      3296         0     100.0
+
+
+Total Coverage By File (code coverage only, filtered view): 94.6%
+

@@ -1,0 +1,63 @@
+TC01: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(789) @ 125: uvm_test_top.env.scoreboard [SCOREBOARD] TEST TC01 PASSED: All expected counts matched
+TC02: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(789) @ 165: uvm_test_top.env.scoreboard [SCOREBOARD] TEST TC02 PASSED: All expected counts matched
+TC03: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(789) @ 255: uvm_test_top.env.scoreboard [SCOREBOARD] TEST TC03 PASSED: All expected counts matched
+TC04: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(789) @ 125: uvm_test_top.env.scoreboard [SCOREBOARD] TEST TC04 PASSED: All expected counts matched
+TC05: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(789) @ 205: uvm_test_top.env.scoreboard [SCOREBOARD] TEST TC05 PASSED: All expected counts matched
+TC06: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(789) @ 215: uvm_test_top.env.scoreboard [SCOREBOARD] TEST TC06 PASSED: All expected counts matched
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(453) @ 76: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Payload matches expected value
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(474) @ 76: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Sequence number matches
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(633) @ 115: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Initial transmission observed
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(644) @ 115: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Payload matches expected value
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(655) @ 115: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Transaction completed successfully
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(666) @ 115: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: No CRC errors in normal transmission
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(677) @ 115: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: No replay in normal transmission
+LINK_NORMAL: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(688) @ 115: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Sequence number matches
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(453) @ 96: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Payload matches expected value
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(474) @ 96: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Sequence number matches
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(705) @ 135: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: CRC error detected with error injection
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(716) @ 135: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Replay observed
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(727) @ 135: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Transaction completed after error
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(738) @ 135: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Payload recovered successfully after replay
+LINK_ERROR: # UVM_INFO E:/ucie/RTL/UVM/env/ucie_scoreboard.sv(749) @ 135: uvm_test_top.env.scoreboard [SCOREBOARD] PASS: Sequence number matches after replay
+RETRY_DEEP: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(86) @ 570: uvm_test_top [EXT_COUNTS] retry accepted=12 replay=11 NAK=11 initial_stall=4
+RETRY_DEEP: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 600: uvm_test_top [EXT_CHECK_PASS] RETRY_DEEP checks=75 TEST_DONE
+LINK_MULTIPLE: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 160: uvm_test_top [EXT_COUNTS] link accepted=3 CRC_errors=2 replays=2 payload/sequence verified
+LINK_MULTIPLE: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 210: uvm_test_top [EXT_CHECK_PASS] LINK checks=32 TEST_DONE
+LINK_DEEP: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 340: uvm_test_top [EXT_COUNTS] link accepted=12 CRC_errors=11 replays=11 payload/sequence verified
+LINK_DEEP: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 390: uvm_test_top [EXT_CHECK_PASS] LINK checks=86 TEST_DONE
+LINK_LONG: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 1400: uvm_test_top [EXT_COUNTS] link accepted=65 CRC_errors=64 replays=64 payload/sequence verified
+LINK_LONG: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 1450: uvm_test_top [EXT_CHECK_PASS] LINK checks=404 TEST_DONE
+BOUNDARY_9_ACK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(107) @ 190: uvm_test_top [EXT_COUNTS] boundary=9 nak=0
+BOUNDARY_9_ACK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 220: uvm_test_top [EXT_CHECK_PASS] BOUNDARY checks=9 TEST_DONE
+BOUNDARY_9_NAK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(107) @ 210: uvm_test_top [EXT_COUNTS] boundary=9 nak=1
+BOUNDARY_9_NAK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 240: uvm_test_top [EXT_CHECK_PASS] BOUNDARY checks=13 TEST_DONE
+BOUNDARY_10_ACK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(107) @ 200: uvm_test_top [EXT_COUNTS] boundary=10 nak=0
+BOUNDARY_10_ACK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 230: uvm_test_top [EXT_CHECK_PASS] BOUNDARY checks=9 TEST_DONE
+BOUNDARY_10_NAK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(107) @ 220: uvm_test_top [EXT_COUNTS] boundary=10 nak=1
+BOUNDARY_10_NAK: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 250: uvm_test_top [EXT_CHECK_PASS] BOUNDARY checks=13 TEST_DONE
+RESET_0: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(131) @ 240: uvm_test_top [EXT_COUNTS] pending reset state=0 no ghost replay
+RESET_0: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 270: uvm_test_top [EXT_CHECK_PASS] RESET checks=17 TEST_DONE
+RESET_1: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(131) @ 250: uvm_test_top [EXT_COUNTS] pending reset state=1 no ghost replay
+RESET_1: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 280: uvm_test_top [EXT_CHECK_PASS] RESET checks=21 TEST_DONE
+RESET_2: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(131) @ 260: uvm_test_top [EXT_COUNTS] pending reset state=2 no ghost replay
+RESET_2: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 290: uvm_test_top [EXT_CHECK_PASS] RESET checks=22 TEST_DONE
+PAYLOAD_1: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_1: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_2: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_2: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_3: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_3: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_4: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_4: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_5: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_5: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_6: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_6: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_7: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_7: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_8: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_8: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_9: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_9: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE
+PAYLOAD_10: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(191) @ 120: uvm_test_top [EXT_COUNTS] link accepted=1 CRC_errors=0 replays=0 payload/sequence verified
+PAYLOAD_10: # UVM_INFO E:/ucie/RTL/UVM/tests/ucie_coverage_extension_test.sv(214) @ 170: uvm_test_top [EXT_CHECK_PASS] LINK checks=16 TEST_DONE

@@ -1,0 +1,398 @@
+COVERGROUP COVERAGE:
+------------------------------------------------------------------------------------------------------------------------
+Covergroup                                         RHS                           Metric       Goal    Status               
+                                                                                                                        
+------------------------------------------------------------------------------------------------------------------------
+ TYPE /ucie_pkg/ucie_coverage/retry_event_cg                                     100.0%        100    Covered              
+    covered/total bins:                                                               7          7                      
+    missing/total bins:                                                               0          7                      
+    % Hit:                                                                       100.0%        100                      
+    Coverpoint retry_event_cg::cp_initial_tx                                     100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 21               Occurred             
+        bin observed                               1                                  6          1    Covered              
+    Coverpoint retry_event_cg::cp_replay                                         100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint retry_event_cg::cp_ack                                            100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 21               Occurred             
+        bin observed                               1                                  6          1    Covered              
+    Coverpoint retry_event_cg::cp_nak                                            100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint retry_event_cg::cp_timeout                                        100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 26               Occurred             
+        bin observed                               1                                  1          1    Covered              
+    Coverpoint retry_event_cg::cp_backpressure                                   100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint retry_event_cg::cp_simultaneous                                   100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 26               Occurred             
+        bin observed                               1                                  1          1    Covered              
+ CLASS ucie_coverage
+ Covergroup instance \/ucie_pkg::ucie_coverage::retry_event_cg  
+                                                                                 100.0%        100    Covered              
+    covered/total bins:                                                               7          7                      
+    missing/total bins:                                                               0          7                      
+    % Hit:                                                                       100.0%        100                      
+    Coverpoint cp_initial_tx                                                     100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 21               Occurred             
+        bin observed                               1                                  6          1    Covered              
+    Coverpoint cp_replay                                                         100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint cp_ack                                                            100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 21               Occurred             
+        bin observed                               1                                  6          1    Covered              
+    Coverpoint cp_nak                                                            100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint cp_timeout                                                        100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 26               Occurred             
+        bin observed                               1                                  1          1    Covered              
+    Coverpoint cp_backpressure                                                   100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint cp_simultaneous                                                   100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 26               Occurred             
+        bin observed                               1                                  1          1    Covered              
+ TYPE /ucie_pkg/ucie_coverage/retry_summary_cg                                    95.0%        100    Uncovered            
+    covered/total bins:                                                              11         12                      
+    missing/total bins:                                                               1         12                      
+    % Hit:                                                                        91.6%        100                      
+    Coverpoint retry_summary_cg::cp_nak                                          100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_nak                                 0                                  2          1    Covered              
+        bin nak_seen                               1                                  4          1    Covered              
+    Coverpoint retry_summary_cg::cp_timeout                                      100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_timeout                             0                                  5          1    Covered              
+        bin timeout_seen                           1                                  1          1    Covered              
+    Coverpoint retry_summary_cg::cp_backpressure                                 100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_backpressure                        0                                  5          1    Covered              
+        bin backpressure_seen                      1                                  1          1    Covered              
+    Coverpoint retry_summary_cg::cp_simultaneous                                 100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_simultaneous                        0                                  5          1    Covered              
+        bin simultaneous_seen                      1                                  1          1    Covered              
+    Coverpoint retry_summary_cg::cp_replay_depth                                  75.0%        100    Uncovered            
+        covered/total bins:                                                           3          4                      
+        missing/total bins:                                                           1          4                      
+        % Hit:                                                                    75.0%        100                      
+        bin no_replay                              0                                  2          1    Covered              
+        bin single_replay                          1                                  3          1    Covered              
+        bin multiple_replays                       2:10                               1          1    Covered              
+        bin deep_replay                            11:4294967295                      0          1    ZERO                 
+ CLASS ucie_coverage
+ Covergroup instance \/ucie_pkg::ucie_coverage::retry_summary_cg  
+                                                                                  95.0%        100    Uncovered            
+    covered/total bins:                                                              11         12                      
+    missing/total bins:                                                               1         12                      
+    % Hit:                                                                        91.6%        100                      
+    Coverpoint cp_nak                                                            100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_nak                                 0                                  2          1    Covered              
+        bin nak_seen                               1                                  4          1    Covered              
+    Coverpoint cp_timeout                                                        100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_timeout                             0                                  5          1    Covered              
+        bin timeout_seen                           1                                  1          1    Covered              
+    Coverpoint cp_backpressure                                                   100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_backpressure                        0                                  5          1    Covered              
+        bin backpressure_seen                      1                                  1          1    Covered              
+    Coverpoint cp_simultaneous                                                   100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_simultaneous                        0                                  5          1    Covered              
+        bin simultaneous_seen                      1                                  1          1    Covered              
+    Coverpoint cp_replay_depth                                                    75.0%        100    Uncovered            
+        covered/total bins:                                                           3          4                      
+        missing/total bins:                                                           1          4                      
+        % Hit:                                                                    75.0%        100                      
+        bin no_replay                              0                                  2          1    Covered              
+        bin single_replay                          1                                  3          1    Covered              
+        bin multiple_replays                       2:10                               1          1    Covered              
+        bin deep_replay                            11:4294967295                      0          1    ZERO                 
+ TYPE /ucie_pkg/ucie_coverage/link_event_cg                                      100.0%        100    Covered              
+    covered/total bins:                                                               3          3                      
+    missing/total bins:                                                               0          3                      
+    % Hit:                                                                       100.0%        100                      
+    Coverpoint link_event_cg::cp_initial_handshake                               100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                  1               Occurred             
+        bin observed                               1                                  2          1    Covered              
+    Coverpoint link_event_cg::cp_crc_error                                       100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                  2               Occurred             
+        bin observed                               1                                  1          1    Covered              
+    Coverpoint link_event_cg::cp_completion                                      100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                  1               Occurred             
+        bin observed                               1                                  2          1    Covered              
+ CLASS ucie_coverage
+ Covergroup instance \/ucie_pkg::ucie_coverage::link_event_cg  
+                                                                                 100.0%        100    Covered              
+    covered/total bins:                                                               3          3                      
+    missing/total bins:                                                               0          3                      
+    % Hit:                                                                       100.0%        100                      
+    Coverpoint cp_initial_handshake                                              100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                  1               Occurred             
+        bin observed                               1                                  2          1    Covered              
+    Coverpoint cp_crc_error                                                      100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                  2               Occurred             
+        bin observed                               1                                  1          1    Covered              
+    Coverpoint cp_completion                                                     100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                  1               Occurred             
+        bin observed                               1                                  2          1    Covered              
+ TYPE /ucie_pkg/ucie_coverage/link_summary_cg                                     91.6%        100    Uncovered            
+    covered/total bins:                                                              11         13                      
+    missing/total bins:                                                               2         13                      
+    % Hit:                                                                        84.6%        100                      
+    Coverpoint link_summary_cg::cp_injected_error                                100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin normal_transaction                     0                                  1          1    Covered              
+        bin error_injected                         1                                  1          1    Covered              
+    Coverpoint link_summary_cg::cp_crc_error                                     100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_crc_error                           0                                  1          1    Covered              
+        bin crc_error_detected                     1                                  1          1    Covered              
+    Coverpoint link_summary_cg::cp_replay                                        100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_replay                              0                                  1          1    Covered              
+        bin replay_observed                        1                                  1          1    Covered              
+    Coverpoint link_summary_cg::cp_payload_match                                 100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin payload_mismatch                0                                  0               ZERO                 
+        bin payload_recovered                      1                                  2          1    Covered              
+    Coverpoint link_summary_cg::cp_valid_recovery_path 
+                                                                                 100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin normal_success                         1                                  1          1    Covered              
+        bin error_recovery_success                 15                                 1          1    Covered              
+    Coverpoint link_summary_cg::cp_replay_depth                                   50.0%        100    Uncovered            
+        covered/total bins:                                                           2          4                      
+        missing/total bins:                                                           2          4                      
+        % Hit:                                                                    50.0%        100                      
+        bin no_replay                              0                                  1          1    Covered              
+        bin single_replay                          1                                  1          1    Covered              
+        bin multiple_replays                       2:10                               0          1    ZERO                 
+        bin deep_replay                            11:4294967295                      0          1    ZERO                 
+ CLASS ucie_coverage
+ Covergroup instance \/ucie_pkg::ucie_coverage::link_summary_cg  
+                                                                                  91.6%        100    Uncovered            
+    covered/total bins:                                                              11         13                      
+    missing/total bins:                                                               2         13                      
+    % Hit:                                                                        84.6%        100                      
+    Coverpoint cp_injected_error                                                 100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin normal_transaction                     0                                  1          1    Covered              
+        bin error_injected                         1                                  1          1    Covered              
+    Coverpoint cp_crc_error                                                      100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_crc_error                           0                                  1          1    Covered              
+        bin crc_error_detected                     1                                  1          1    Covered              
+    Coverpoint cp_replay                                                         100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_replay                              0                                  1          1    Covered              
+        bin replay_observed                        1                                  1          1    Covered              
+    Coverpoint cp_payload_match                                                  100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin payload_mismatch                0                                  0               ZERO                 
+        bin payload_recovered                      1                                  2          1    Covered              
+    Coverpoint cp_valid_recovery_path                                            100.0%        100    Covered              
+        covered/total bins:                                                           2          2                      
+        missing/total bins:                                                           0          2                      
+        % Hit:                                                                   100.0%        100                      
+        bin normal_success                         1                                  1          1    Covered              
+        bin error_recovery_success                 15                                 1          1    Covered              
+    Coverpoint cp_replay_depth                                                    50.0%        100    Uncovered            
+        covered/total bins:                                                           2          4                      
+        missing/total bins:                                                           2          4                      
+        % Hit:                                                                    50.0%        100                      
+        bin no_replay                              0                                  1          1    Covered              
+        bin single_replay                          1                                  1          1    Covered              
+        bin multiple_replays                       2:10                               0          1    ZERO                 
+        bin deep_replay                            11:4294967295                      0          1    ZERO                 
+ TYPE /ucie_pkg/retry_cg                                                         100.0%        100    Covered              
+    covered/total bins:                                                              10         10                      
+    missing/total bins:                                                               0         10                      
+    % Hit:                                                                       100.0%        100                      
+    Coverpoint retry_cg::cp_initial_tx                                           100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_replay                                               100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_ack                                                  100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_nak                                                  100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_timeout                                              100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_backpressure                                         100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_simultaneous                                         100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+    Coverpoint retry_cg::cp_replay_depth                                         100.0%        100    Covered              
+        covered/total bins:                                                           3          3                      
+        missing/total bins:                                                           0          3                      
+        % Hit:                                                                   100.0%        100                      
+ Covergroup instance \/ucie_pkg::ucie_scoreboard::retry_coverage  
+                                                                                 100.0%        100    Covered              
+    covered/total bins:                                                              10         10                      
+    missing/total bins:                                                               0         10                      
+    % Hit:                                                                       100.0%        100                      
+    Coverpoint cp_initial_tx                                                     100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 21               Occurred             
+        bin observed                               1                                  6          1    Covered              
+    Coverpoint cp_replay                                                         100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint cp_ack                                                            100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 21               Occurred             
+        bin observed                               1                                  6          1    Covered              
+    Coverpoint cp_nak                                                            100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint cp_timeout                                                        100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 26               Occurred             
+        bin observed                               1                                  1          1    Covered              
+    Coverpoint cp_backpressure                                                   100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 22               Occurred             
+        bin observed                               1                                  5          1    Covered              
+    Coverpoint cp_simultaneous                                                   100.0%        100    Covered              
+        covered/total bins:                                                           1          1                      
+        missing/total bins:                                                           0          1                      
+        % Hit:                                                                   100.0%        100                      
+        ignore_bin not_observed                    0                                 26               Occurred             
+        bin observed                               1                                  1          1    Covered              
+    Coverpoint cp_replay_depth                                                   100.0%        100    Covered              
+        covered/total bins:                                                           3          3                      
+        missing/total bins:                                                           0          3                      
+        % Hit:                                                                   100.0%        100                      
+        bin no_replay                              0                                 17          1    Covered              
+        bin single_replay                          1                                  8          1    Covered              
+        bin multiple_replays                       2:10                               2          1    Covered              
+
+TOTAL COVERGROUP COVERAGE: 97.3%  COVERGROUP TYPES: 5

@@ -1,0 +1,1285 @@
+{
+  "metrics": {
+    "before": {
+      "Stmts": {
+        "active": 99,
+        "hits": 97,
+        "misses": 2,
+        "percent": 97.98
+      },
+      "Branches": {
+        "active": 40,
+        "hits": 37,
+        "misses": 3,
+        "percent": 92.5
+      },
+      "FEC Condition Terms": {
+        "active": 17,
+        "hits": 9,
+        "misses": 8,
+        "percent": 52.941
+      },
+      "FEC Expression Terms": {
+        "active": 2,
+        "hits": 2,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "States": {
+        "active": 4,
+        "hits": 4,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "Transitions": {
+        "active": 8,
+        "hits": 6,
+        "misses": 2,
+        "percent": 75.0
+      },
+      "Toggle Bins": {
+        "active": 24922,
+        "hits": 11377,
+        "misses": 13545,
+        "percent": 45.65
+      },
+      "per_file": {
+        "E:/ucie/RTL/UVM/interfaces/ucie_link_if.sv": {
+          "Stmts": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 2148,
+            "hits": 768,
+            "misses": 1380,
+            "percent": 35.7
+          }
+        },
+        "E:/ucie/RTL/UVM/interfaces/ucie_retry_if.sv": {
+          "Stmts": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 2196,
+            "hits": 835,
+            "misses": 1361,
+            "percent": 38.0
+          }
+        },
+        "E:/ucie/RTL/src/ucie68_header_encoder.sv": {
+          "Stmts": {
+            "active": 10,
+            "hits": 10,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 54,
+            "hits": 4,
+            "misses": 50,
+            "percent": 7.4
+          }
+        },
+        "E:/ucie/RTL/src/ucie68b_flit_rx.sv": {
+          "Stmts": {
+            "active": 13,
+            "hits": 13,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 4260,
+            "hits": 2354,
+            "misses": 1906,
+            "percent": 55.2
+          }
+        },
+        "E:/ucie/RTL/src/ucie68b_flit_tx.sv": {
+          "Stmts": {
+            "active": 12,
+            "hits": 12,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 4246,
+            "hits": 1156,
+            "misses": 3090,
+            "percent": 27.2
+          }
+        },
+        "E:/ucie/RTL/src/ucie_crc16_candidate.sv": {
+          "Stmts": {
+            "active": 8,
+            "hits": 8,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 2,
+            "hits": 2,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 2,
+            "hits": 2,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 2178,
+            "hits": 820,
+            "misses": 1358,
+            "percent": 37.6
+          }
+        },
+        "E:/ucie/RTL/src/ucie_link_top.sv": {
+          "Stmts": {
+            "active": 24,
+            "hits": 24,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 15,
+            "hits": 14,
+            "misses": 1,
+            "percent": 93.3
+          },
+          "FEC Condition Terms": {
+            "active": 10,
+            "hits": 7,
+            "misses": 3,
+            "percent": 70.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 6544,
+            "hits": 3544,
+            "misses": 3000,
+            "percent": 54.1
+          }
+        },
+        "E:/ucie/RTL/src/ucie_retry_controller.sv": {
+          "Stmts": {
+            "active": 32,
+            "hits": 30,
+            "misses": 2,
+            "percent": 93.7
+          },
+          "Branches": {
+            "active": 23,
+            "hits": 21,
+            "misses": 2,
+            "percent": 91.3
+          },
+          "FEC Condition Terms": {
+            "active": 7,
+            "hits": 2,
+            "misses": 5,
+            "percent": 28.5
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 4,
+            "hits": 4,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 8,
+            "hits": 6,
+            "misses": 2,
+            "percent": 75.0
+          },
+          "Toggle Bins": {
+            "active": 3296,
+            "hits": 1896,
+            "misses": 1400,
+            "percent": 57.5
+          }
+        }
+      },
+      "reported_total": "79.4"
+    },
+    "after": {
+      "Stmts": {
+        "active": 99,
+        "hits": 97,
+        "misses": 2,
+        "percent": 97.98
+      },
+      "Branches": {
+        "active": 40,
+        "hits": 38,
+        "misses": 2,
+        "percent": 95.0
+      },
+      "FEC Condition Terms": {
+        "active": 17,
+        "hits": 15,
+        "misses": 2,
+        "percent": 88.235
+      },
+      "FEC Expression Terms": {
+        "active": 2,
+        "hits": 2,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "States": {
+        "active": 4,
+        "hits": 4,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "Transitions": {
+        "active": 8,
+        "hits": 8,
+        "misses": 0,
+        "percent": 100.0
+      },
+      "Toggle Bins": {
+        "active": 24922,
+        "hits": 21590,
+        "misses": 3332,
+        "percent": 86.63
+      },
+      "per_file": {
+        "E:/ucie/RTL/UVM/interfaces/ucie_link_if.sv": {
+          "Stmts": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 2148,
+            "hits": 2098,
+            "misses": 50,
+            "percent": 97.6
+          }
+        },
+        "E:/ucie/RTL/UVM/interfaces/ucie_retry_if.sv": {
+          "Stmts": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 2196,
+            "hits": 2196,
+            "misses": 0,
+            "percent": 100.0
+          }
+        },
+        "E:/ucie/RTL/src/ucie68_header_encoder.sv": {
+          "Stmts": {
+            "active": 10,
+            "hits": 10,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 54,
+            "hits": 32,
+            "misses": 22,
+            "percent": 59.2
+          }
+        },
+        "E:/ucie/RTL/src/ucie68b_flit_rx.sv": {
+          "Stmts": {
+            "active": 13,
+            "hits": 13,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 4260,
+            "hits": 3226,
+            "misses": 1034,
+            "percent": 75.7
+          }
+        },
+        "E:/ucie/RTL/src/ucie68b_flit_tx.sv": {
+          "Stmts": {
+            "active": 12,
+            "hits": 12,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 4246,
+            "hits": 3200,
+            "misses": 1046,
+            "percent": 75.3
+          }
+        },
+        "E:/ucie/RTL/src/ucie_crc16_candidate.sv": {
+          "Stmts": {
+            "active": 8,
+            "hits": 8,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 2,
+            "hits": 2,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Condition Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 2,
+            "hits": 2,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 2178,
+            "hits": 1108,
+            "misses": 1070,
+            "percent": 50.8
+          }
+        },
+        "E:/ucie/RTL/src/ucie_link_top.sv": {
+          "Stmts": {
+            "active": 24,
+            "hits": 24,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Branches": {
+            "active": 15,
+            "hits": 14,
+            "misses": 1,
+            "percent": 93.3
+          },
+          "FEC Condition Terms": {
+            "active": 10,
+            "hits": 10,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 6544,
+            "hits": 6434,
+            "misses": 110,
+            "percent": 98.3
+          }
+        },
+        "E:/ucie/RTL/src/ucie_retry_controller.sv": {
+          "Stmts": {
+            "active": 32,
+            "hits": 30,
+            "misses": 2,
+            "percent": 93.7
+          },
+          "Branches": {
+            "active": 23,
+            "hits": 22,
+            "misses": 1,
+            "percent": 95.6
+          },
+          "FEC Condition Terms": {
+            "active": 7,
+            "hits": 5,
+            "misses": 2,
+            "percent": 71.4
+          },
+          "FEC Expression Terms": {
+            "active": 0,
+            "hits": 0,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "States": {
+            "active": 4,
+            "hits": 4,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Transitions": {
+            "active": 8,
+            "hits": 8,
+            "misses": 0,
+            "percent": 100.0
+          },
+          "Toggle Bins": {
+            "active": 3296,
+            "hits": 3296,
+            "misses": 0,
+            "percent": 100.0
+          }
+        }
+      },
+      "reported_total": "94.6"
+    }
+  },
+  "functional": {
+    "before": {
+      "/ucie_pkg/ucie_coverage/retry_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/retry_summary_cg": [
+        {
+          "name": "no_nak",
+          "rhs": "0",
+          "hits": 2
+        },
+        {
+          "name": "nak_seen",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "no_timeout",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "timeout_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_backpressure",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "backpressure_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_simultaneous",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "simultaneous_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 2
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 3
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 1
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 0
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 2
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 2
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_summary_cg": [
+        {
+          "name": "normal_transaction",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "error_injected",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_crc_error",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "crc_error_detected",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "replay_observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "payload_recovered",
+          "rhs": "1",
+          "hits": 2
+        },
+        {
+          "name": "normal_success",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "error_recovery_success",
+          "rhs": "15",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 1
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 0
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 0
+        }
+      ],
+      "/ucie_pkg/retry_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 17
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 8
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 2
+        }
+      ]
+    },
+    "after": {
+      "/ucie_pkg/ucie_coverage/retry_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 13
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 18
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 11
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 19
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 35
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/retry_summary_cg": [
+        {
+          "name": "no_nak",
+          "rhs": "0",
+          "hits": 4
+        },
+        {
+          "name": "nak_seen",
+          "rhs": "1",
+          "hits": 7
+        },
+        {
+          "name": "no_timeout",
+          "rhs": "0",
+          "hits": 10
+        },
+        {
+          "name": "timeout_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_backpressure",
+          "rhs": "0",
+          "hits": 5
+        },
+        {
+          "name": "backpressure_seen",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "no_simultaneous",
+          "rhs": "0",
+          "hits": 10
+        },
+        {
+          "name": "simultaneous_seen",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 4
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 1
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 1
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_event_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 15
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 15
+        }
+      ],
+      "/ucie_pkg/ucie_coverage/link_summary_cg": [
+        {
+          "name": "normal_transaction",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "error_injected",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "no_crc_error",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "crc_error_detected",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "replay_observed",
+          "rhs": "1",
+          "hits": 4
+        },
+        {
+          "name": "payload_recovered",
+          "rhs": "1",
+          "hits": 15
+        },
+        {
+          "name": "normal_success",
+          "rhs": "1",
+          "hits": 11
+        },
+        {
+          "name": "error_recovery_success",
+          "rhs": "15",
+          "hits": 4
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 11
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 1
+        },
+        {
+          "name": "deep_replay",
+          "rhs": "11:4294967295",
+          "hits": 2
+        }
+      ],
+      "/ucie_pkg/retry_cg": [
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 6
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 5
+        },
+        {
+          "name": "observed",
+          "rhs": "1",
+          "hits": 1
+        },
+        {
+          "name": "no_replay",
+          "rhs": "0",
+          "hits": 17
+        },
+        {
+          "name": "single_replay",
+          "rhs": "1",
+          "hits": 8
+        },
+        {
+          "name": "multiple_replays",
+          "rhs": "2:10",
+          "hits": 2
+        }
+      ]
+    }
+  },
+  "baseline_count": 8,
+  "extension_count": 21,
+  "original_source_count": 36,
+  "changed_originals": [],
+  "staged_checkpoint_unchanged": true,
+  "original_backup": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853\\backup",
+  "baseline_dir": "E:\\ucie\\RTL\\UVM\\logs\\coverage_extension_20261114_112853"
+}
